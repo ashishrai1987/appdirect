@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parameterization Test Suite">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<parameter name="browserType" value="C" />
+	<test name="Testing Parameterization">
+		<classes>
+			<class name="com.appdirect.test.tests.SignUpTest" />
+		</classes>
+	</test>
+</suite>
+  
+

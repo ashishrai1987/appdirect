@@ -1,0 +1,42 @@
+AppDirect
+
+Framework is based on POM and uses PageFactory to initialize elements annotated by @FindBy, @FindBys, @FindAll. 
+Language: Java
+Build Tool: Maven
+Testing tool: Selenium WebDriver
+Testing Framework: TestNG
+
+Packages:
+src/test/java/com/appdirect/tests
+
+	TestNg test classes
+
+src/test/java/com/appdirect/pageobjects
+
+	Object Repository classes which hold all the page objects.
+
+src/test/java/com/appdirect/base
+
+	Connecting class between test classes and OR, also used for initializing browser instances.
+
+
+src/test/java/com/appdirect/util
+
+	Utility classes
+
+DataProvider is used to pass test data from excel(User_list.xls) using POI in TestNG test classes
+
+
+Project Setup
+
+Requirements:Maven, eclipse
+
+Import the project as maven project. Clean and build the project and run testng.xml(config/testng.xml) as testNG suite
+Note: Make sure maven and testng plugin is downloaded in eclipse.
+
+From Terminal: cd to the project folder and execute
+mvn clean
+mvn test -P selenium-tests
+Note: Make sure maven is installed and maven home directory path is set.
+
+ReportNG is user for reporting, test report can be found under "appdirect/test-output/index.html"

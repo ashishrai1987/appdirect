@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <parameter name="browserType" value="C"/>
+  <test name="Default test(failed)" preserve-order="true">
+    <parameter name="browserType" value="C"/>
+    <classes>
+      <class name="com.appdirect.test.tests.SignUpTest">
+        <methods>
+          <include name="verifyLogin"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verfySignUpforValidUsers" invocation-numbers="1 2"/>
+        </methods>
+      </class> <!-- com.appdirect.test.tests.SignUpTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
